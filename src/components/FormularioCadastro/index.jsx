@@ -3,7 +3,7 @@ import "./estilo.css";
 
 export const FormularioCadastro = () => {
   const handleMudancaTitulo = (evento) => {
-    console.log(evento.target.value);
+    this.titulo = evento.target.value;
   };
   return (
     <>
@@ -11,7 +11,7 @@ export const FormularioCadastro = () => {
         <input
           type="text"
           placeholder="Título"
-          onChange={handleMudancaTitulo}
+          onChange={this.handleMudancaTitulo}
         />
         <textarea placeholder="Escreva sua nota." />
         <button>Criar Nota</button>
